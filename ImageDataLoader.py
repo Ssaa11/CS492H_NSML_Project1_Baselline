@@ -39,7 +39,7 @@ class SimpleImageLoader(torch.utils.data.Dataset):
                 if int(label) != -1 and (split == 'unlabel' or split == 'test'):
                     continue
                 if (ids is None) or (int(instance_id) in ids):
-                    if os.path.exists(self.impath, file_name):
+                    if os.path.exists(os.path.join(self.impath, file_name)):
                         imnames.append(file_name)
                         if split == 'train' or split == 'val':
                             imclasses.append(int(label))
