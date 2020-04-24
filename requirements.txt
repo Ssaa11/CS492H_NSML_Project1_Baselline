@@ -1,4 +1,2 @@
-torch==1.3.1
-tqdm
-pytorch_metric_learning
+#nsml: nvcr.io/nvidia/pytorch:20.03-py3
 torchvision

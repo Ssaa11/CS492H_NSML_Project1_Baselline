@@ -21,15 +21,11 @@ import torch.nn.functional as F
 
 import torchvision
 from torchvision import datasets, models, transforms
-
-import tensorflow as tf
 import torch.nn.functional as F
 
 from ImageDataLoader import SimpleImageLoader
 from models import Res18, Res50, Dense121, Res18_basic
 
-from pytorch_metric_learning import miners
-from pytorch_metric_learning import losses as lossfunc
 import glob
 
 import nsml
